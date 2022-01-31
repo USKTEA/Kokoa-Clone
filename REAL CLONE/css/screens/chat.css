@@ -1,0 +1,145 @@
+.chat-screen {
+  background-color: #abc1d1;
+  height: 300vh;
+}
+
+.chat-screen .alt-header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  background-color: #abc1d1;
+}
+
+.main-chat {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+
+  background-color: #92a4b2;
+  padding: 15px 15px;
+  border-radius: 25px;
+}
+
+.messege-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.messege-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+
+.messege__author {
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.messege__bubble {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 18px;
+  border-top-left-radius: 0;
+  margin-right: 5px;
+  z-index: 0;
+}
+
+.messege__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.messege__time {
+  opacity: 0.8;
+  font-size: 13px;
+  z-index: 0;
+}
+
+.messege-row--own {
+  justify-content: flex-end;
+}
+
+.messege-row--own .messege__bubble {
+  background-color: rgb(241, 241, 137);
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.messege-row--own .messege__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+
+.reply__column:last-child > i {
+  right: 40px;
+  top: 10px;
+}
+
+.reply__column button {
+  background-color: rgb(241, 241, 137);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply__column button i {
+  opacity: 1;
+}

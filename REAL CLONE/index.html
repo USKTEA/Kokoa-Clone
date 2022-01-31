@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span> No Service </span>
+        <i class="fas fa-wifi"></i>
+        <!--To Do :Wifi Icon-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span> 111% </span>
+        <i class="fas fa-battery-full fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+        <!--Battery Icon-->
+        <!--Lighting Icon-->
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your phone or ID.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" class="login-form">
+      <input name="username" type="text" placeholder="Phone or ID" required />
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        required
+        minlength="10"
+      />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa password</a>
+    </form>
+    <div class="no-mobile">
+      <span>Your screen is too big!! </span
+      ><img
+        class="no-mobile__img"
+        src="https://mblogthumb-phinf.pstatic.net/MjAxODA4MTlfMjYw/MDAxNTM0NjIwNzY0MjIy.l7EpRqC73lj190MzOfvL0P8uZNKlsZGnz35JngGWDRkg.xaP4Vm_ZnvJiqEVs8FL_daGFLQgNoNizqj1Vex8fptwg.JPEG.hwee__/P20180819_000929869_027F5164-EC5F-436A-9DE9-62258028C634.jpg?type=w2"
+      />
+    </div>
+  </body>
+</html>
